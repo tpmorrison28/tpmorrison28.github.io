@@ -1,4 +1,4 @@
-/* Reset & Base */
+/* Reset & Base Typography */
 * {
   margin: 0;
   padding: 0;
@@ -7,27 +7,22 @@
 
 body {
   font-family: 'Times New Roman', Times, serif;
-  background-color: #fff;
   color: #222;
   line-height: 1.6;
+  background: #fff;
   padding: 2rem;
 }
 
-/* Header */
-header {
+/* Layout */
+header, footer {
   text-align: center;
   margin-bottom: 2rem;
 }
 
 header h1 {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  font-family: 'Times New Roman', Times, serif;
-  color: #111;
-}
-
-nav {
-  margin-top: 0.5rem;
 }
 
 nav a {
@@ -42,11 +37,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Section */
-main section {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1rem;
+/* Sections */
+section {
+  max-width: 1200px;
+  margin: 2rem auto;
 }
 
 h2 {
@@ -61,7 +55,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  margin-top: 0rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   color: #222;
 }
@@ -72,6 +66,7 @@ p {
   max-width: 800px;
 }
 
+/* Only difference from the main CSS: we keep list bullets */
 ul {
   list-style-type: disc;
   margin-left: 2rem;
@@ -81,22 +76,28 @@ ul {
 ul ul {
   list-style-type: circle;
   margin-top: 0.25rem;
+  margin-left: 1rem;
 }
 
 li {
-  margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
-footer {
-  text-align: center;
-  margin-top: 4rem;
+footer p {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 0.9rem;
   color: #666;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  section {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
   body {
     padding: 1rem;
   }
@@ -108,13 +109,5 @@ footer {
   nav a {
     display: block;
     margin: 0.5rem 0;
-  }
-
-  main section {
-    padding: 0.5rem;
-  }
-
-  ul {
-    margin-left: 1.5rem;
   }
 }
