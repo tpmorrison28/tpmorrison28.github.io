@@ -63,7 +63,6 @@ h3 {
 /* Paragraphs & Lists */
 p {
   margin-bottom: 1rem;
-  max-width: 800px;
 }
 
 /* Only difference from the main CSS: we keep list bullets */
@@ -111,3 +110,4 @@ footer p {
     margin: 0.5rem 0;
   }
 }
+
